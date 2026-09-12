@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - E-Commerce Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+    <nav class="navbar">
+
+        <a href="#home" class="logo">ShopEase</a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#cart-section" class="cart">
+            🛒 Cart
+            <span id="cart-count">0</span>
+        </a>
+
+    </nav>
+</header>
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-small-text">
+            WELCOME TO SHOPEASE
+        </p>
+       <h2>Shop Smart.<br>
+        Shop Simple. 🛍️</h2>
+
+        <p class="hero-description">
+            Discover quality products at affordable prices.
+            Everything you need, all in one place.
+        </p>
+
+        <button id="shop-now">
+            Shop Now →
+        </button>
+
+    </div>
+
+</section>
+
+
+    <!-- Products Section -->
+    <section id="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="search-box">
+    <input
+        type="text"
+        id="search-input"
+        placeholder="Search products..."
+    >
+     </div>
+
+    <!-- Category Buttons -->
+    <div class="category-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="fashion">Fashion</button>
+        <button class="filter-btn" data-category="shoes">Shoes</button>
+        <button class="filter-btn" data-category="electronics">Electronics</button>
+    </div>
+
+    <div class="product-container">
+
+            <!-- Product 1 -->
+            <div class="product-card" data-category="fashion">
+
+            
+
+                <div class="product-image">
+                  <img src="images/tshirt.jpg" alt="Classic T-Shirt">
+               </div>
+
+                <h3>Classic T-Shirt</h3>
+
+                <p>₹799</p>
+
+                <button class="add-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="shoes">
+
+            
+
+                <div class="product-image">
+                    <img src="images/shoes.jpg" alt="Running Shoes">
+             </div>
+
+                <h3>Running Shoes</h3>
+
+                <p>₹1,499</p>
+
+                <button class="add-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="electronics">
+
+            
+
+                <div class="product-image">
+                  <img src="images/headphones.jpg" alt="Wireless Headphones">
+                </div>
+
+                <h3>Wireless Headphones</h3>
+
+                <p>₹1,999</p>
+
+                <button class="add-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section id="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="categories">
+
+            <div class="category">👕 Fashion</div>
+
+            <div class="category">💻 Electronics</div>
+
+            <div class="category">👟 Shoes</div>
+
+        </div>
+
+    </section>
+
+<!-- Shopping Cart -->
+<section id="cart-section">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3 id="cart-total">Total: ₹0</h3>
+
+    <button id="clear-cart">Clear Cart</button>
+
+    <button id="checkout-btn">Checkout</button>
+
+</section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: support@shopease.com</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 ShopEase. All rights reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
